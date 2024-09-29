@@ -54,3 +54,27 @@ user1@ii777:~/Desktop/tutorial-nextjs-official$ tree -L 2 -I node_modules/
 > - /app/ui: Contains all the UI components for your application, such as cards, tables, and forms. To save time, we've pre-styled these components for you.
 > - /public: Contains all the static assets for your application, such as images.
 > - Config Files: You'll also notice config files such as next.config.js at the root of your application. Most of these files are created and pre-configured when you start a new project using create-next-app. You will not need to modify them in this course.
+
+### Use Tailwind and CSS modules together for styling
+```js
+<div className={`${styles.customStyle} bg-blue-500 text-white p-4 rounded`} />
+```
+
+### Conditional styling
+```js
+import clsx from 'clsx';
+ 
+export default function InvoiceStatus({ status }: { status: string }) {
+  return (
+    <span
+      className={clsx(
+        'inline-flex items-center rounded-full px-2 py-1 text-sm',
+        {
+          'bg-gray-100 text-gray-500': status === 'pending',
+          'bg-green-500 text-white': status === 'paid',
+        },
+      )}
+    >
+    // ...
+)}
+```

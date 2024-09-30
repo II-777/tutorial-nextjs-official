@@ -14,6 +14,9 @@ This is a repository for documenting my journey of learning Next.js
 ## Next.js Official Tutorial:
 - [Nextjs: Official Tutorial](https://nextjs.org/learn/dashboard-app) 
 - [Git: starter example repo](https://github.com/vercel/next-learn/tree/main/dashboard/starter-example)
+## Libraries:
+- [zod input validation](https://zod.dev/?id=ip-addresses)
+
 ## Chapter 1
 ```bash
 # install package manager

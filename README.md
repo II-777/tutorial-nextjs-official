@@ -14,7 +14,7 @@ This is a repository for documenting my journey of learning Next.js
 ## Next.js Official Tutorial:
 - [Nextjs: Official Tutorial](https://nextjs.org/learn/dashboard-app) 
 - [Git: starter example repo](https://github.com/vercel/next-learn/tree/main/dashboard/starter-example)
-## Lesson 1
+## Chapter 1
 ```bash
 # install package manager
 npm install -g pnpm
@@ -56,7 +56,7 @@ user1@ii777:~/Desktop/tutorial-nextjs-official$ tree -L 2 -I node_modules/
 > - Config Files: You'll also notice config files such as next.config.js at the root of your application. Most of these files are created and pre-configured when you start a new project using create-next-app. You will not need to modify them in this course.
 
 
-## Lesson 2
+## Chapter 2
 ### Use Tailwind and CSS modules together for styling
 ```js
 <div className={`${styles.customStyle} bg-blue-500 text-white p-4 rounded`} />
@@ -81,7 +81,7 @@ export default function InvoiceStatus({ status }: { status: string }) {
 )}
 ```
 
-## Lesson 3
+## Chapter 3
 - [Google Fonts: Lusitana](https://fonts.google.com/specimen/Lusitana?query=Lusitana)
 ```ts
 
@@ -107,14 +107,9 @@ import { lusitana } from '@/app/ui/fonts';
     >
 ```
 
-## Lesson 4
-
-## Lesson 5
-
-## Lesson 6
-
-# Chapter 6: Setting Up Your Database
-
+## Chapter 4
+## Chapter 5
+## Chapter 6: Setting Up Your Database
 ## Steps to Set Up PostgreSQL Database with Vercel
 
 1. **Push Project to GitHub**
@@ -153,3 +148,12 @@ import { lusitana } from '@/app/ui/fonts';
 - If seeding fails, consider using `bcryptjs` instead of `bcrypt`.
 - To rerun seed script, use `DROP TABLE tablename` carefully.
 - Open a discussion on GitHub for persistent issues.
+
+## Chapter 7
+## Chapter 8
+## Chapter 9
+## Chapter 10
+## Chapter 11
+```bash
+pnpm i use-debounce
+```

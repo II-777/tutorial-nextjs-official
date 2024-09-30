@@ -160,3 +160,9 @@ import { lusitana } from '@/app/ui/fonts';
 ```bash
 pnpm i use-debounce
 ```
+## Chapter 14
+```bash
+pnpm lint
+```
+## Chapter 15
+## Chapter 16

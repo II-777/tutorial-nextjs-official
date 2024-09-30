@@ -14,7 +14,7 @@ This is a repository for documenting my journey of learning Next.js
 ## Next.js Official Tutorial:
 - [Nextjs: Official Tutorial](https://nextjs.org/learn/dashboard-app) 
 - [Git: starter example repo](https://github.com/vercel/next-learn/tree/main/dashboard/starter-example)
-### Lesson 1
+## Lesson 1
 ```bash
 # install package manager
 npm install -g pnpm
@@ -106,3 +106,50 @@ import { lusitana } from '@/app/ui/fonts';
       className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
     >
 ```
+
+## Lesson 4
+
+## Lesson 5
+
+## Lesson 6
+
+# Chapter 6: Setting Up Your Database
+
+## Steps to Set Up PostgreSQL Database with Vercel
+
+1. **Push Project to GitHub**
+2. **Deploy Vercel Project**
+3. **Create a Postgres Database**
+   - Go to Dashboard > Storage tab.
+   - Select **Connect Store** → **Create New** → **Postgres** → **Continue**.
+   - Accept terms, name your database, and set region to Washington D.C (iad1).
+   - Copy database secrets from the `.env.local` tab.
+   - Rename `.env.example` to `.env` in your code editor and paste secrets.
+   - Ensure `.env` is in your `.gitignore`.
+   - Run `pnpm i @vercel/postgres` in your terminal.
+
+5. **Seed Your Database**
+   - In `/app/seed`, uncomment `route.ts`.
+   - Run local server: `pnpm run dev`.
+   - Navigate to `localhost:3000/seed` in your browser.
+   - Confirm message "Database seeded successfully" appears.
+
+6. **Explore Your Database**
+   - Go to Vercel and click on **Data**.
+   - Check tables: users, customers, invoices, revenue.
+
+7. **Execute Queries**
+   - Switch to "query" tab in Vercel.
+   - Run the following SQL:
+     ```sql
+     SELECT invoices.amount, customers.name
+     FROM invoices
+     JOIN customers ON invoices.customer_id = customers.id
+     WHERE invoices.amount = 666;
+     ```
+
+## Troubleshooting
+- Ensure database secrets are copied correctly.
+- If seeding fails, consider using `bcryptjs` instead of `bcrypt`.
+- To rerun seed script, use `DROP TABLE tablename` carefully.
+- Open a discussion on GitHub for persistent issues.

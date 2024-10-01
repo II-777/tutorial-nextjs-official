@@ -175,5 +175,4 @@ openssl rand -base64 32
 ```bash
 https://nextjs.org/docs/app/api-reference/functions/generate-metadata
 ```
-```
 

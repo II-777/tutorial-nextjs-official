@@ -171,4 +171,9 @@ pnpm lint
 pnpm i next-auth@beta
 openssl rand -base64 32
 ```
-## Chapter 16
+## Chapter 16 Metadata
+```bash
+https://nextjs.org/docs/app/api-reference/functions/generate-metadata
+```
+```
+

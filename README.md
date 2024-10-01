@@ -164,5 +164,11 @@ pnpm i use-debounce
 ```bash
 pnpm lint
 ```
-## Chapter 15
+## Chapter 15 Authentication and Authorization
+- [NexAuth Docs](https://authjs.dev/reference/nextjs)
+
+```bash
+pnpm i next-auth@beta
+openssl rand -base64 32
+```
 ## Chapter 16
